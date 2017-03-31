@@ -26,14 +26,15 @@ public class mainEntrega {
         System.out.println("\nConsulta si la pila está vacia");
         System.out.println(pila.esVaciaPila());
         
-        System.out.println("\nConsulta el tope de la pila");
-        System.out.println(pila.tope());
-        
-        System.out.println("\nEliminar el tope de la pila");
-        pila.desapilar();
-        
-        System.out.println("\nConsulta el tope de la pila");
-        System.out.println(pila.tope());
+        while (!pila.esVaciaPila()){
+        	System.out.println("\nConsulta el tope de la pila");
+            System.out.println(pila.tope());
+        	System.out.println("\nEliminar el tope de la pila");
+            pila.desapilar();
+            System.out.println("\nDESAPILÓ");
+            System.out.println("\nConsulta si la pila está vacia");
+            System.out.println(pila.esVaciaPila());
+        }
 		
 	}
 
